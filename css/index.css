@@ -221,6 +221,7 @@ p {
 .bottom-content {
   border-top: 1px solid #a8a1a1;
   padding-top: 1rem;
+  margin-bottom: 8rem;
 }
 .bottom-content h3 {
   font-size: 1.3rem;
@@ -234,4 +235,11 @@ p {
   padding: 1rem;
   margin-left: 8rem;
   font-size: 1.3rem;
+}
+.bottom-content .licol {
+  background: gainsboro;
+}
+footer {
+  display: flex;
+  justify-content: center;
 }
