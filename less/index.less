@@ -57,6 +57,9 @@ html, body {
 	height: 100%;
 	max-width: 1000px;
 	margin: auto;
+	@media(max-width: 500px) {
+		margin: auto 3%;
+	}
 }
 
 @font-size: 1.8rem;
@@ -86,19 +89,40 @@ p {
 
 .container {
 	font-size: 62.5%
-	
 }
 
 .nav-bar {
 	
 	nav {
 		.flex();
-
+@media(max-width: 500px) {
+	display: flex;
+    flex-direction: column;
+}
 		a {
 			color: black;
 			padding: 1.6rem;
 			font-size: 1rem;
 			text-decoration: none;
+
+			@media(max-width: 500px) {
+				display: flex;
+        		padding: 14px;
+        		border-top: 1px solid gray;
+        		width: 100%;
+				justify-content: center;
+			}
+		}
+	}
+	.contact {
+		@media(max-width: 500px) {
+			border-bottom: 1px solid gray;
+		}
+	}
+	a:hover {
+		@media(max-width: 500px) {
+			color: gray;
+			background: gainsboro;
 		}
 	}
 }
@@ -142,6 +166,10 @@ p {
 			outline: none;
 			background: rgb(34, 37, 37);
 			margin-left: 45%;
+
+			@media(max-width: 500px) {
+				padding: 1.6rem;
+			}
 		}
 	}
 	button:hover {
@@ -152,8 +180,15 @@ p {
 .middle-content {
 	display: flex;
 	margin-bottom: 2rem;
+	@media(max-width: 500px) {
+	flex-direction: column;
+	}
 	.about {
 		width: 40rem;
+		@media(max-width: 500px) {
+			width: auto;
+			padding-bottom: 1rem;
+		}
 	}
 	
 	p {
@@ -176,12 +211,12 @@ p {
 	}
 	.titles {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
+		margin-right: 1rem;
 	}
 	li {
 		border: 1px solid gainsboro;
 		.pad();
-		margin-left: 8rem;
 		font-size: 1.3rem;
 		}
 		.licol {
