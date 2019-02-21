@@ -221,23 +221,60 @@ p {
 .main-content .top-content-low p {
   padding-top: 1rem;
 }
-.main-content .top-content-low button {
+.main-content .top-content-low .dropbtn {
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  font-size: 1rem;
   border-radius: 0.4rem;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   outline: none;
   background: #222525;
-  margin-left: 45%;
 }
 @media (max-width: 500px) {
-  .main-content .top-content-low button {
+  .main-content .top-content-low .dropbtn {
     padding: 1.6rem;
   }
 }
-.main-content button:hover {
-  background: gray;
+.main-content .dropbtn:hover {
+  background: #44278a;
+}
+.main-content .dropdown-content {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  min-width: 16rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.main-content .dropdown-content a {
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1.2rem 1.6rem;
+  border: 1px solid black;
+  text-decoration: none;
+  display: block;
+}
+.main-content .dropdown-content a:hover {
+  background: #796b6b;
+}
+.main-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+.main-content .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.main-content i {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+.main-content .fa-facebook-square {
+  color: #3b5998;
+}
+.main-content .fa-google-plus {
+  color: #db4437;
 }
 .middle-content {
   display: flex;
